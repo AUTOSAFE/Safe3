@@ -68,7 +68,7 @@ func requestWithHeader(url string, token string) {
       fmt.Printf("\n[401] Failed Maybe Auth Key Expired Or Wrong?")
     }
 	if res.StatusCode == 403 {
-		fmt.Printf("\n[403] Your Account Has Ben Banned From Server")
+		fmt.Printf("\n[403] Your Auth Expired repeat")
 	}
 	if res.StatusCode == 501 {
 		fmt.Printf("\n[501] Failed")
